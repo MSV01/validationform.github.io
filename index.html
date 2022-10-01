@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment # 10</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Validation Form</legend>
+        <form name="f1" onsubmit="validation();return verifyPassword();">
+            <br>
+            Name: <br>
+            <input type="text" id="name"><br><br>
+            Email: <br>
+            <input type="text" id="email"><br><br>
+
+            Phone Number: <br>
+            <input type="text" id="number">
+            <br> <br>
+            <td> Enter Password: <br></td>
+            <input type="password" id="pswd" value="">
+            <span id="message" style="color:red"> </span>
+            <p> </p>
+            <input class="chkbx" type="checkbox" onclick="checkPassword()">Show Password<br><br>
+            <input class="submit" type="submit" value="submit">
+            <br>
+        </form>
+    </fieldset>
+    <br><br><br>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
